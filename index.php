@@ -1,12 +1,15 @@
 <?php
 
-require "./php/Produto.php";
 
- $produto1 = new Produto();
-$produto1->setNome("Camiseta estampada");
- $produto1->setMarca("Gucci");
-$produto1->setdescricao("camiseta estampada da marca gucci");
-$produto1->setValor(5, 00);
-$produto1->imprimir();
+require "./php/Cliente.php";
+ $cliente = new Cliente();
+
+ $cliente->setNome("Angélica");
+$cliente->setCpf(121231212);
+$cliente->setDataNasc(2005);
+$cliente->setEndereco("ASDKASLDASDKAS");
+$cliente->setEmail("angelica@fatec.sp.gov.br");
+$cliente->setTelefone(18998240548);
+$cliente->verificarMaiorIdade();
 
 
